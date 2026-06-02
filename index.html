@@ -213,6 +213,53 @@
           min-width: 100%;
           animation: marquee 20s linear infinite;
         }
+
+.products-service {
+    width: 100%;
+    padding: 50px 0;
+    background: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.products-service h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #081f3a;
+    font-weight: 700;
+}
+
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 25s linear infinite;
+}
+
+.logo-track img {
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    margin: 0 25px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
     </style>
 </head>
 <body>
@@ -291,6 +338,32 @@
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <section class="products-service">
+    <h2>Products We Service</h2>
+
+    <div class="logo-slider">
+        <div class="logo-track">
+
+            <!-- First Set -->
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+            <img src="logo4.png" alt="Logo 4">
+            <img src="logo5.png" alt="Logo 5">
+            <img src="logo6.png" alt="Logo 6">
+
+            <!-- Duplicate Set for Infinite Scroll -->
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+            <img src="logo3.png" alt="Logo 3">
+            <img src="logo4.png" alt="Logo 4">
+            <img src="logo5.png" alt="Logo 5">
+            <img src="logo6.png" alt="Logo 6">
+
+        </div>
+    </div>
         </section>
 
         <!-- Services Section -->
